@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Sahni - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div class="bg-blob blob-1"></div>
+        <div class="bg-blob blob-2"></div>
+        <div class="bg-blob blob-3"></div>
+    </div>
+
+    <!-- Floating Icons -->
+    <div class="floating-icons">
+        <div class="floating-icon icon-1">💻</div>
+        <div class="floating-icon icon-2">⚡</div>
+        <div class="floating-icon icon-3">🚀</div>
+        <div class="floating-icon icon-4">⭐</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <div class="logo-icon">PS</div>
+                <span class="logo-text">Prince Sahni</span>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="theme-icon" id="themeIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="container">
+                <a href="#home" class="mobile-link">Home</a>
+                <a href="#about" class="mobile-link">About</a>
+                <a href="#skills" class="mobile-link">Skills</a>
+                <a href="#projects" class="mobile-link">Projects</a>
+                <a href="#education" class="mobile-link">Education</a>
+                <a href="#contact" class="mobile-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-badge">
+                <svg class="sparkle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                </svg>
+                <span>ASPIRING SOFTWARE DEVELOPER</span>
+            </div>
+            <h1>Prince Sahni</h1>
+            <p>Building the <span class="highlight">future</span> one line of code at a time</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#projects" class="btn btn-secondary">View Projects</a>
+                <button class="btn btn-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Resume
+                </button>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/sahniprince" target="_blank" class="social-link" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/prince-sahni" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-link" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="https://www.naukri.com/mnjuser/profile" target="_blank" class="social-link" aria-label="Naukri">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div>
+                    <h2 class="section-header" style="text-align: left; margin-bottom: 1.5rem;">
+                        <span style="background: linear-gradient(to right, var(--accent-cyan), var(--accent-blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">About Me</span>
+                    </h2>
+                    <div class="about-text">
+                        <p>I'm a passionate computer science enthusiast currently pursuing my BCA (Hons.) from Babasaheb Bhimrao Ambedkar University, Lucknow. My journey into the world of technology began with a curiosity to understand how things work behind the scenes.</p>
+                        <p>With a strong academic foundation having achieved first division in both my high school and intermediate examinations from CBSE Board, I've channeled my dedication into mastering web development and programming. I believe in learning by doing, which is why I'm constantly working on projects that challenge me to grow.</p>
+                        <p>My goal is to become a proficient software developer who creates meaningful solutions that make a difference. I'm always eager to explore new technologies, collaborate with fellow developers, and contribute to innovative projects.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <div class="stat-number">2024</div>
+                            <div class="stat-label">Started BCA Journey</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">7+</div>
+                            <div class="stat-label">Technologies Learned</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Dedication</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Learning Mindset</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <p>Technologies I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="90">
+                    <div class="skill-header">
+                        <span class="skill-name">HTML</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-skill="85">
+                    <div class="skill-header">
+                        <span class="skill-name">CSS</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-skill="80">
+                    <div class="skill-header">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-skill="75">
+                    <div class="skill-header">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-skill="70">
+                    <div class="skill-header">
+                        <span class="skill-name">C/C++</span>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-skill="65">
+                    <div class="skill-header">
+                        <span class="skill-name">MySQL</span>
+                        <span class="skill-percentage">65%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-skill="80">
+                    <div class="skill-header">
+                        <span class="skill-name">Git & GitHub</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-categories">
+                <div class="card category-card">
+                    <svg class="category-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="card category-card">
+                    <svg class="category-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    <h3>Programming</h3>
+                    <p>C, C++, Python</p>
+                </div>
+                <div class="card category-card">
+                    <svg class="category-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                    </svg>
+                    <h3>Tools & Database</h3>
+                    <p>Git, GitHub, MySQL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projects</h2>
+                <p>What I'm building</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🌤️</div>
+                        <div>
+                            <h3 class="project-title">Weather App</h3>
+                            <span class="project-status">In Progress</span>
+                        </div>
+                    </div>
+                    <p class="project-description">A dynamic weather application that provides real-time weather information with an intuitive interface. Built with modern web technologies to deliver accurate forecasts and weather data.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Weather API</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <p style="color: var(--text-secondary); font-size: 1.125rem;">More exciting projects coming soon! 🚀</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <div class="section-header">
+                <h2>Education</h2>
+                <p>My academic journey</p>
+            </div>
+            <div class="education-grid">
+                <div class="card">
+                    <div class="education-main">
+                        <div class="edu-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="edu-content">
+                            <h3>Bachelor of Computer Applications (Hons.)</h3>
+                            <p class="edu-institution">Babasaheb Bhimrao Ambedkar University, Lucknow</p>
+                            <p class="edu-date">Currently Pursuing | Expected 2027</p>
+                            <p class="edu-description">Specializing in computer science fundamentals, programming, and software development with a focus on practical application and project-based learning.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-secondary">
+                    <div class="card">
+                        <h3>Intermediate (Class XII)</h3>
+                        <p class="edu-institution">CBSE Board</p>
+                        <p class="edu-date">Year of Completion: 2023</p>
+                        <span class="badge-success">First Division</span>
+                    </div>
+                    <div class="card">
+                        <h3>High School (Class X)</h3>
+                        <p class="edu-institution">CBSE Board</p>
+                        <p class="edu-date">Year of Completion: 2021</p>
+                        <span class="badge-success">First Division</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <h3 class="text-center mb-4" style="font-size: 1.875rem; font-weight: 900;">Certifications & Learning</h3>
+                <div class="cert-grid">
+                    <div class="card cert-card">
+                        <svg class="cert-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                        <div class="cert-info">
+                            <h4>Web Development Fundamentals</h4>
+                            <p class="cert-org">Self-Learned</p>
+                            <p class="cert-year">2024</p>
+                        </div>
+                    </div>
+                    <div class="card cert-card">
+                        <svg class="cert-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                        <div class="cert-info">
+                            <h4>Python Programming</h4>
+                            <p class="cert-org">Online Course</p>
+                            <p class="cert-year">2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2>Testimonials</h2>
+                <p>What others say</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">Prince demonstrates exceptional dedication to learning and consistently shows enthusiasm for tackling complex programming challenges.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div>
+                            <div class="author-name">Academic Mentor</div>
+                            <div class="author-role">Professor, BBAU</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">Working with Prince on projects has been great. His problem-solving skills and attention to detail make him a valuable team member.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">P</div>
+                        <div>
+                            <div class="author-name">Peer Collaborator</div>
+                            <div class="author-role">Fellow Student</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Let's connect and build something amazing</p>
+            </div>
+            <div class="contact-grid">
+                <a href="mailto:princekumarbelwana@gmail.com" class="contact-card">
+                    <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <h3>Email</h3>
+                    <p>princekumarbelwana@gmail.com</p>
+                </a>
+                <a href="tel:+919120673003" class="contact-card">
+                    <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <h3>Phone</h3>
+                    <p>+91 9120673003</p>
+                </a>
+                <div class="contact-card">
+                    <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <h3>Location</h3>
+                    <p>Lucknow, Uttar Pradesh, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="copyright">© 2024 Prince Sahni. All rights reserved.</p>
+            <p class="tagline">Designed with passion and built with HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
